@@ -11,10 +11,7 @@ St Patrick’s FaceMash is a web-based comparison platform that allows users to 
 - SQLite / PostgreSQL (Database)
 
 ## 🚀 Features
-- 🔐 User authentication (login/logout)
-- 🗳️ Vote between two random profiles
-- 📊 Ranking system based on votes
-- ⚡ Dynamic profile selection
+- 🗳️ Vote between two girls
 - 🧾 Admin panel for managing profiles
 
 ## ⚠️ Note
