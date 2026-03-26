@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 import random
 from .models import Face, Mash
 
@@ -17,3 +17,10 @@ def home(request):
         face_2 = Face.objects.all()[random_index_2]
 
     return render(request, 'home.html', { 'face_1': face_1, 'face_2': face_2 })
+
+def mash(request, pk):
+    face = get_object_or_404(Face, pk=pk)
+    mash = Mash.objects.create(face=face)
+    mash.save()
+
+    return redirect('home')
