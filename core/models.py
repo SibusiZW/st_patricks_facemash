@@ -8,3 +8,7 @@ class Face(models.Model):
 
     def __str__(self):
         return self.name
+
+class Mash(models.Model):
+    face = models.ForeignKey(Face, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
